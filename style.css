@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbasectioncss */
+.navbar-section-div {
+  background-color: transparent;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
+.navbar-section-div ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  color: white;
+  font-size: larger;
+}
+.navbar-section-div div button {
+  background-color: orangered;
+  color: white;
+  width: 160px;
+  height: 50px;
+  border-radius: 7px;
+  font-size: large;
+  border-color: transparent;
+}
+.navbar-section-div div button:hover {
+  background-color: green;
+  color: rgb(196, 9, 196);
+}
+
+/* Hero section */
+.hero-section {
+  background: linear-gradient(
+      to top,
+      rgba(42, 165, 155, 0.027),
+      rgba(0, 132, 255, 0.281)
+    ),
+    url("home-hero\ background\ image.jpg");
+  /* background-image: url("home-hero\ background\ image.jpg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  padding: 40px;
+}
+.hero-section h3 {
+  border-style: solid;
+  width: 350px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255, 0.2);
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-size: x-large;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding-left: 10px;
+  margin-top: 70px;
+}
+.hero-section > h1 {
+  font-size: 65px;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: large;
+  width: 48%;
+  line-height: 22px;
+  margin-bottom: 40px;
+}
+
+/* .hero-section div button:nth-child(1) {
+    background-color: orangered;
+}
+the above is one of the ways to target a particular type child in a div or selector */
+
+.hero-section div button {
+  background-color: orangered;
+  width: 150px;
+  height: 50px;
+  border-radius: 6px;
+  color: white;
+  font-size: large;
+  border-color: transparent;
+  margin-right: 100px;
+}
+.hero-section .hero-btn-watch {
+  background-color: transparent;
+  border-color: rgba(128, 128, 128, 0.514);
+}
+
+.hero-section div button:hover {
+  background-color: orangered;
+}
+.hero-section div .hero-btn-watch:hover {
+  background-color: rgba(195, 0, 255, 0);
+}
+
+/* Hero section ends here */
+
+/* dest css section */
+.dest-section {
+  text-align: center;
+  margin-top: 100px;
+  text-transform: uppercase;
+  color: orange;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 106, 0, 0.4);
+  height: 25px;
+  border-radius: 20px;
+}
+
+.pack-section {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 45px;
+}
+
+.dest-flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.dest-flex-container div div > img {
+  border-radius: 80px;
+}
+
+.dest-package-contents {
+  left: 100px;
+  border-style: double;
+  border-color: transparent;
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  text-align: center;
+  align-content: center;
+  position: relative;
+  top: -80px;
+}
+
+.dest-package-contents h4 {
+  background-color: pink;
+  color: orangered;
+  border-radius: 20px;
+  width: 100px;
+  height: 30px;
+  justify-self: center;
+  margin-bottom: 20px;
+}
+
+.dest-package-contents h5 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* dest css section ends */
+
+/* About us css */
+.about-us-section {
+  background-color: #fff7ec;
+}
+
+.about-us-flex-container {
+  display: flex;
+  padding: 100px;
+  margin-left: 50px;
+}
+
+.about-us-2nd-child h6 {
+  color: orangered;
+  background-color: white;
+  border-radius: 30px;
+  font-weight: lighter;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  align-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.about-us-2nd-child h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+/* About us css ends here */
+
+@media (max-width: 1024px) {
+  .hero-section {
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .dest-flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 834px) {
+  .navbar-section-div ul {
+    display: none;
+  }
+  .navbar-section-div div button {
+    display: none;
+  }
+  .hero-section h1 {
+    width: 100%;
+  }
+  .hero-section p {
+    width: 100%;
+  }
+  .hero-section .hero-btn-watch {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+}
